@@ -35,6 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (in_array($obj["head"]["device"]["language"] , $lang)) {
 				$getCatalog = $getCatalog . $obj["head"]["device"]["language"] . '.json';
 			}
+			///Only catalog_en is present in this repository, for the sake of example.
+			///Please add, remove or modify these files or listings on your own, for your own needs.
 			else {
 				$getCatalog = $getCatalog . 'error.json';
 				///no language found? ok, just specify the error json instead.
@@ -43,6 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			///and now we output the language catalog segment;
 			
 			echo file_get_contents('<http_location>/channel_1.json');
+			echo file_get_contents('<http_location>/channel_2.json'); 
+			//this one is just a copy, it is not added in the airing_shows json file, and you must do so on your own for each channel.
+			
 			///this outputs the channel to be displayed, as the order here does NOT matter. They can be ALL loaded in any order.
 			echo '
             {
