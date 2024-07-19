@@ -8,7 +8,7 @@ Multiple entries can be added easily, without having to keep adding the catalog 
 This can be used alongside this tool: https://github.com/MettleSphee/3DS_EpisodeGenerator_AnimeTemplate
 
 
-WARNING! This project *expects* you to:
+## WARNING! This project *expects* you to:
 - know exactly what you're doing;
 - to know PHP language and JSON file structure;
 - to know how the AnimeChannel works (reference: https://github.com/MettleSphee/3DS_EpisodeGenerator_AnimeTemplate);
