@@ -12,10 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$catalog_en = '
 	"The test is successful, and your Nintendo 3DS reported with the following data:\n
 	Device Country: ' . $obj["head"]["device"]["country"] . '\n
-	Device Language: '. $obj["head"]["device"]["language"] . '\n
-	API Version: '. $obj["head"]["apiVersion"] . '\n
-	Protocol Version: '. $obj["head"]["protocolVersion"] .'"
-	'; /// custom string that displays what it received.
+	Device Language: '. $obj["head"]["device"]["language"] . '"
+	'; /// custom string that displays what it received, country and language.
 	}
 	if ($entityBody!="") $test = $obj["body"][0];
 	if ($entityBody==="") echo($not_app_err); 
