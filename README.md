@@ -2,7 +2,7 @@
 This is my "Mock API" implementation for the Nintendo Anime Channel catalog, which allows to easily add channels and videos, modularly, to your desired server.
 
 This uses PHP and allows you to add multiple catalog segments from all over the internet, given that they're added properly in the files as seen in the examples. 
-Which is why I'm clarifying that this should work properly on an unedited, SSL patched 3DS, with a PHP-enabled webserver that you're going to host this on.
+Which is why I'm clarifying that this should work properly on an unedited, SSL patched 3DS, with a PHP-enabled and https (can use self-signed certificates) webserver that you're going to host this on.
 
 
 
